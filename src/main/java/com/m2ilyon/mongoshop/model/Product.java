@@ -21,6 +21,13 @@ public class Product {
     private BigDecimal vat;
     private BigDecimal unitPriceWithTax;
 
+    public Product(String name, String description, BigDecimal unitPriceWithoutTax, BigDecimal vat) {
+        this.name = name;
+        this.description = description;
+        this.unitPriceWithoutTax = unitPriceWithoutTax;
+        this.vat = vat;
+    }
+
     public Product(String slug, String name, String description, BigDecimal unitPriceWithoutTax, BigDecimal vat, BigDecimal unitPriceWithTax) {
         this.slug = slug;
         this.name = name;
